@@ -10,5 +10,6 @@ public interface DBUtils {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3307/acts?useSSL=false&allowPublicKeyRetrieval=true";
 			return DriverManager.getConnection(url, "root", "sai9860");
+			
 		}
 }
