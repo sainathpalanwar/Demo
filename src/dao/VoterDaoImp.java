@@ -22,7 +22,7 @@ public class VoterDaoImp implements IVoterDao {
 		String sqlvoters="select * from voters where role != 'admin' and status=1";
 		String sqlRegister="insert into voters (name,email,password,status,role) values (?,?,?,0,'voter')";
 		String sqlstatuscheck="select status from voters where id=?";
-	
+	System.out.println("hi");
 		pst=cn.prepareStatement(sql);
 		pst1=cn.prepareStatement(sqlUpdate);
 		pst2=cn.prepareStatement(sqlvoters);
